@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["jest", "node"],
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "esModuleInterop": true
+  }
+}
