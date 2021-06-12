@@ -15,7 +15,7 @@ export type AuthNavigationType<RouteName extends keyof AuthRoutes> =
 
 export type AuthNavigationProps<RouteName extends keyof AuthRoutes> = {
   navigation: StackNavigationProp<AuthRoutes, RouteName>;
-  route: RouteProp<AppRoutes, 'AuthStackNavigation'>;
+  route: RouteProp<AuthRoutes, RouteName>;
 };
 
 // for useNavigation hook
@@ -51,12 +51,12 @@ export type AppNavigationType<RouteName extends keyof AppRoutes> =
 export type ModalNavigationType<RouteName extends keyof ModalRoutes> =
   CompositeNavigationProp<
     StackNavigationProp<ModalRoutes, RouteName>,
-    StackNavigationProp<AppRoutes, 'DrawerNavigator'>
+    StackNavigationProp<AppRoutes, 'ModalRoutes'>
   >;
 
 export type ModalNavigationProps<RouteName extends keyof ModalRoutes> = {
   navigation: StackNavigationProp<ModalRoutes, RouteName>;
-  route: RouteProp<AppRoutes, 'DrawerNavigator'>;
+  route: RouteProp<ModalRoutes, RouteName>;
 };
 
 export type AppRoutes = {
@@ -76,6 +76,8 @@ export type BottomTabRoutes = {
 
 export type DrawerRoutes = {
   Home: NestedNavigatorParams<BottomTabRoutes>;
+  EditProfile: undefined;
+  HolidayBudget: undefined;
   About: undefined;
   Settings: undefined;
 };
