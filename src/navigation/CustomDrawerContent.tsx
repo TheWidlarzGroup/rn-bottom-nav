@@ -6,7 +6,7 @@ import {
   DrawerContentComponentProps,
 } from '@react-navigation/drawer';
 
-import {Box, Text} from '../utils/theme';
+import {Box, Text, theme} from '../utils/theme';
 
 export const CustomDrawerContent: FC<DrawerContentComponentProps> = props => {
   return (
@@ -17,9 +17,9 @@ export const CustomDrawerContent: FC<DrawerContentComponentProps> = props => {
         <DrawerItemList {...props} />
       </Box>
 
-      <Box marginBottom="l">
-        <TouchableOpacity>
-          <Text>Logout</Text>
+      <Box marginBottom="l" marginHorizontal="xl">
+        <TouchableOpacity style={styles.logoutButton}>
+          <Text variant="buttonText1">Logout</Text>
         </TouchableOpacity>
       </Box>
     </DrawerContentScrollView>
@@ -30,5 +30,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'space-between',
+  },
+  logoutButton: {
+    backgroundColor: theme.colors.primary,
+    paddingVertical: theme.spacing.s,
+    borderRadius: theme.borderRadii.xxl,
   },
 });
