@@ -3,7 +3,6 @@ import {Dimensions} from 'react-native';
 import {NavigationState} from '@react-navigation/native';
 
 import {Box} from '../../utils/theme';
-import {isIos} from '../../utils/isIos';
 import {NavigationDot} from './NavigationDot';
 import {TabsHandler} from './TabsHandler';
 
@@ -24,7 +23,7 @@ export const TabsUi: FC<TabsUiProps> = ({tabs, state}) => {
       <Box
         width={windowWidth}
         position="absolute"
-        bottom={isIos() ? -5 : 0}
+        bottom={-5}
         backgroundColor="transparent">
         <Box flexDirection="column">
           <TabsHandler {...{tabs, tabWidth}} activeTabIndex={state.index} />
