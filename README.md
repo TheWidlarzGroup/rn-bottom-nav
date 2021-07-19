@@ -2,7 +2,7 @@
 
 # Introduction
 
-This is a repository for the article about building the custom bottom bar navigation. Full article is available [here](#link-to-add).
+This is a repository for the article about building the custom bottom bar navigation. Full article is available [here](https://thewidlarzgroup.com/bottom-navigation/).
 
 # Instructions
 
