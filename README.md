@@ -8,9 +8,9 @@ This is a repository for the article about building the custom bottom bar naviga
 
 ## Branches
 
-    The master branch contains the code of the finished application.
+1. The master branch contains the code of the finished application.
 
-    The nav-starter branch has a core setup. It's for people, who wants to follow the article, and write code by themself.
+2. The nav-starter branch has a core setup. It's for people, who wants to follow the article, and write code by themself.
 
 ## Start application
 
